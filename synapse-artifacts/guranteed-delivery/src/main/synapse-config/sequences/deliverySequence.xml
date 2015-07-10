@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence xmlns="http://ws.apache.org/ns/synapse" name="deliverySequence" onError="deliveryFailSequence">
+    <log level="custom">
+        <property name="Sequence Invoke:" value="deliverySequence"/>
+    </log>
+    <enrich>
+        <source type="envelope"/>
+        <target type="property" property="SOAP_ENVELOPE"/>
+    </enrich>
+    <call>
+        <endpoint key="RealTimeEndPoint"/>
+    </call>
+</sequence>

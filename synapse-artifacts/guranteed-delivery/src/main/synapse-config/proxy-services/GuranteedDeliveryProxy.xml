@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="GuranteedDeliveryProxy" transports="http https" startOnLoad="true" trace="disable">
+    <target>
+        <inSequence>
+            <log level="custom">
+                <property name="Invoking the proxy service:" value="GuranteedDeliveryProxy"/>
+            </log>
+            <header name="Action" scope="default" value=""/>
+            <sequence key="deliverySequence"/>
+            <log level="custom">
+                <property name="deliverySequence response status:" expression="$axis2:HTTP_SC"/>
+            </log>
+            <filter source="$axis2:HTTP_SC" regex="500">
+                <then>
+                    <log level="custom">
+                        <property name="deliverySequence response status:" expression="$axis2:HTTP_SC"/>
+                    </log>
+                    <property xmlns:ns2="http://org.apache.synapse/xsd" xmlns:ns="http://org.apache.synapse/xsd" name="FAULT_STRING" expression="string($ctx:body/child::*[fn:position()=1]//faultstring)" scope="default" type="STRING"/>
+                    <property xmlns:ns2="http://org.apache.synapse/xsd" xmlns:ns="http://org.apache.synapse/xsd" name="FAULT_CODE" expression="string($ctx:body/child::*[fn:position()=1]//faultcode)" scope="default" type="STRING"/>
+                    <property xmlns:ns="http://org.apache.synapse/xsd" name="FAULT_STATUS" expression="$axis2:HTTP_SC" scope="default" type="STRING"/>
+                    <sequence key="messageQueueSequence"/>
+                </then>
+                <else/>
+            </filter>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+</proxy>

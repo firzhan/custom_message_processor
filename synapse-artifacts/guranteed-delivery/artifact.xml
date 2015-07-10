@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="GuranteedDeliveryProxy" groupId="com.example.guranteed-delivery.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/GuranteedDeliveryProxy.xml</file>
+    </artifact>
+    <artifact name="deliverySequence" groupId="com.example.guranteed-delivery.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/deliverySequence.xml</file>
+    </artifact>
+    <artifact name="deliveryFailSequence" groupId="com.example.guranteed-delivery.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/deliveryFailSequence.xml</file>
+    </artifact>
+    <artifact name="RealTimeEndPoint" groupId="com.example.guranteed-delivery.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/RealTimeEndPoint.xml</file>
+    </artifact>
+    <artifact name="messageQueueSequence" groupId="com.example.guranteed-delivery.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/messageQueueSequence.xml</file>
+    </artifact>
+        <artifact name="ScheduledProcessor" groupId="com.example.guranteed-delivery.message-processors" version="1.0.0" type="synapse/message-processors" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-processors/ScheduledProcessor.xml</file>
+    </artifact>
+    <artifact name="moveSequence" groupId="com.example.guranteed-delivery.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/moveSequence.xml</file>
+    </artifact>
+    <artifact name="backupQueueEP" groupId="com.example.guranteed-delivery.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/backupQueueEP.xml</file>
+    </artifact>
+    <artifact name="stock_message_queue" groupId="com.example.guranteed-delivery.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/stock_message_queue.xml</file>
+    </artifact>
+</artifacts>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esb:EsbDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:esb="http:///org/wso2/developerstudio/eclipse/gmf/esb">
+  <server type="PROXY">
+    <children xsi:type="esb:ProxyService" name="GuranteedDeliveryProxy" transports="http,https">
+      <outputConnector>
+        <outgoingLink target="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@inputConnector"/>
+      </outputConnector>
+      <inputConnector/>
+      <faultInputConnector/>
+      <outSequenceOutputConnector/>
+      <container>
+        <sequenceAndEndpointContainer>
+          <mediatorFlow>
+            <children xsi:type="esb:LogMediator" logLevel="CUSTOM" logSeparator=", ">
+              <inputConnector incomingLinks="//@server/@children.0/@outputConnector/@outgoingLink"/>
+              <outputConnector>
+                <outgoingLink target="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@inputConnector"/>
+              </outputConnector>
+              <properties propertyName="Invoking the proxy service:" propertyValue="GuranteedDeliveryProxy">
+                <propertyExpression prettyName="property expression" propertyName="expression" propertyValue="/default/expression" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+              </properties>
+            </children>
+            <children xsi:type="esb:HeaderMediator" valueLiteral="">
+              <headerName prettyName="Header Name" propertyName="name" propertyValue="Action" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+              <valueExpression prettyName="Expression" propertyName="expression" propertyValue="/default/expression" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+              <inputConnector incomingLinks="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+              <outputConnector>
+                <outgoingLink target="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@inputConnector"/>
+              </outputConnector>
+            </children>
+            <children xsi:type="esb:Sequence" name="deliverySequence">
+              <inputConnector incomingLinks="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@outputConnector/@outgoingLink"/>
+              <outputConnector>
+                <outgoingLink target="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@inputConnector"/>
+              </outputConnector>
+              <dynamicReferenceKey prettyName="Sequence Expression" propertyName="expression" propertyValue="/default/expression" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+              <staticReferenceKey prettyName="Sequence Key" keyName="Sequence Key" keyValue="deliverySequence" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000017400196F72672E77736F322E636172626F6E2E6D6564696174797065737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A6578700000000177040000000174001D6170706C69636174696F6E2F766E642E77736F322E73657175656E63657878"/>
+            </children>
+            <children xsi:type="esb:LogMediator" logLevel="CUSTOM" logSeparator=", ">
+              <inputConnector incomingLinks="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@outputConnector.0/@outgoingLink"/>
+              <outputConnector>
+                <outgoingLink target="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@inputConnector"/>
+              </outputConnector>
+              <properties propertyName="deliverySequence response status:" propertyValueType="EXPRESSION">
+                <propertyExpression propertyValue="$axis2:HTTP_SC" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+              </properties>
+            </children>
+            <children xsi:type="esb:FilterMediator" regex="500">
+              <inputConnector incomingLinks="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@outputConnector/@outgoingLink"/>
+              <outputConnector>
+                <outgoingLink target="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.5/@inputConnector"/>
+              </outputConnector>
+              <passOutputConnector>
+                <outgoingLink target="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.0/@inputConnector"/>
+              </passOutputConnector>
+              <failOutputConnector/>
+              <xpath prettyName="Filter Source XPath" propertyName="filterSourceXpath" propertyValue="/default/xpath" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+              <source propertyValue="$axis2:HTTP_SC" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+              <filterContainer>
+                <passContainer>
+                  <mediatorFlow>
+                    <children xsi:type="esb:LogMediator" logLevel="CUSTOM" logSeparator=", ">
+                      <inputConnector incomingLinks="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@passOutputConnector/@outgoingLink"/>
+                      <outputConnector>
+                        <outgoingLink target="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.1/@inputConnector"/>
+                      </outputConnector>
+                      <properties propertyName="deliverySequence response status:" propertyValueType="EXPRESSION">
+                        <propertyExpression propertyValue="$axis2:HTTP_SC" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+                      </properties>
+                    </children>
+                    <children xsi:type="esb:PropertyMediator" propertyName="FAULT_STRING" valueType="EXPRESSION">
+                      <inputConnector incomingLinks="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+                      <outputConnector>
+                        <outgoingLink target="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.2/@inputConnector"/>
+                      </outputConnector>
+                      <valueExpression propertyValue="string($ctx:body/child::*[fn:position()=1]//faultstring)" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000027400036E733274001D687474703A2F2F6F72672E6170616368652E73796E617073652F7873647400026E7371007E000378"/>
+                    </children>
+                    <children xsi:type="esb:PropertyMediator" propertyName="FAULT_CODE" valueType="EXPRESSION">
+                      <inputConnector incomingLinks="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.1/@outputConnector/@outgoingLink"/>
+                      <outputConnector>
+                        <outgoingLink target="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.3/@inputConnector"/>
+                      </outputConnector>
+                      <valueExpression propertyValue="string($ctx:body/child::*[fn:position()=1]//faultcode)" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000027400036E733274001D687474703A2F2F6F72672E6170616368652E73796E617073652F7873647400026E7371007E000378"/>
+                    </children>
+                    <children xsi:type="esb:PropertyMediator" propertyName="FAULT_STATUS" valueType="EXPRESSION">
+                      <inputConnector incomingLinks="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.2/@outputConnector/@outgoingLink"/>
+                      <outputConnector>
+                        <outgoingLink target="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.4/@inputConnector"/>
+                      </outputConnector>
+                      <valueExpression propertyValue="$axis2:HTTP_SC" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000017400026E7374001D687474703A2F2F6F72672E6170616368652E73796E617073652F78736478"/>
+                    </children>
+                    <children xsi:type="esb:Sequence" name="messageQueueSequence">
+                      <inputConnector incomingLinks="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.3/@outputConnector/@outgoingLink"/>
+                      <outputConnector/>
+                      <dynamicReferenceKey prettyName="Sequence Expression" propertyName="expression" propertyValue="/default/expression" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+                      <staticReferenceKey prettyName="Sequence Key" keyName="Sequence Key" keyValue="messageQueueSequence" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000017400196F72672E77736F322E636172626F6E2E6D6564696174797065737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A6578700000000177040000000174001D6170706C69636174696F6E2F766E642E77736F322E73657175656E63657878"/>
+                    </children>
+                  </mediatorFlow>
+                </passContainer>
+                <failContainer>
+                  <mediatorFlow/>
+                </failContainer>
+              </filterContainer>
+            </children>
+            <children xsi:type="esb:RespondMediator">
+              <inputConnector incomingLinks="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@outputConnector/@outgoingLink"/>
+              <outputConnector/>
+            </children>
+          </mediatorFlow>
+        </sequenceAndEndpointContainer>
+        <faultContainer>
+          <mediatorFlow/>
+        </faultContainer>
+      </container>
+      <inSequenceKey prettyName="In Sequence Reference" keyName="key" keyValue="/default/key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+      <inSequenceOnError prettyName="In Sequence On Error Reference" keyName="key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000017400196F72672E77736F322E636172626F6E2E6D6564696174797065737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A6578700000000177040000000174001D6170706C69636174696F6E2F766E642E77736F322E73657175656E63657878"/>
+      <outSequenceKey prettyName="Out Sequence Reference" keyName="key" keyValue="/default/key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+      <outSequenceOnError prettyName="Out Sequence On Error Reference" keyName="key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000017400196F72672E77736F322E636172626F6E2E6D6564696174797065737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A6578700000000177040000000174001D6170706C69636174696F6E2F766E642E77736F322E73657175656E63657878"/>
+      <faultSequenceKey prettyName="Fault Sequence Reference" keyName="key" keyValue="/default/key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+      <faultSequenceOnError prettyName="Fault Sequence On Error Reference" keyName="key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000017400196F72672E77736F322E636172626F6E2E6D6564696174797065737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A6578700000000177040000000174001D6170706C69636174696F6E2F766E642E77736F322E73657175656E63657878"/>
+      <endpointKey prettyName="Endpoint Reference" keyName="key" keyValue="/default/key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+      <wsdlKey prettyName="WSDL Reference" keyName="key" keyValue="/default/key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000017400196F72672E77736F322E636172626F6E2E6D6564696174797065737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A657870000000017704000000017400146170706C69636174696F6E2F7773646C2B786D6C7878"/>
+      <OnError prettyName="On Error Sequence Reference" keyName="key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
+    </children>
+  </server>
+</esb:EsbDiagram>

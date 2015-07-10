@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/developerstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_9QTekCdCEeW9d6j1IEPRoA" type="Esb" name="proxy_GuranteedDeliveryProxy.esb_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_9c368CdCEeW9d6j1IEPRoA" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9c5JECdCEeW9d6j1IEPRoA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_fTZMoCdHEeW9d6j1IEPRoA" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_fTZMpSdHEeW9d6j1IEPRoA" type="5003"/>
+        <children xmi:type="notation:Node" xmi:id="_fTaawCdHEeW9d6j1IEPRoA" type="3002">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTaawSdHEeW9d6j1IEPRoA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fTaawidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_fTaawydHEeW9d6j1IEPRoA"/>
+          <element xmi:type="esb:ProxyOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@outputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTaaxCdHEeW9d6j1IEPRoA" x="81" y="-27"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fTaaxSdHEeW9d6j1IEPRoA" type="3003">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTaaxidHEeW9d6j1IEPRoA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fTaaxydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_fTaayCdHEeW9d6j1IEPRoA"/>
+          <element xmi:type="esb:ProxyInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@inputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTaaySdHEeW9d6j1IEPRoA" x="81" y="-15"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fTaayidHEeW9d6j1IEPRoA" type="3729">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTaayydHEeW9d6j1IEPRoA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fTaazCdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_fTaazSdHEeW9d6j1IEPRoA"/>
+          <element xmi:type="esb:ProxyOutSequenceOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@outSequenceOutputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTaazidHEeW9d6j1IEPRoA" x="105" y="-15"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fTbB0CdHEeW9d6j1IEPRoA" type="3489">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTbB0SdHEeW9d6j1IEPRoA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fTbB0idHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_fTbB0ydHEeW9d6j1IEPRoA"/>
+          <element xmi:type="esb:ProxyFaultInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@faultInputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTbB1CdHEeW9d6j1IEPRoA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fTbB1SdHEeW9d6j1IEPRoA" type="3486">
+          <children xmi:type="notation:Node" xmi:id="_fTdeECdHEeW9d6j1IEPRoA" type="3487">
+            <children xmi:type="notation:Node" xmi:id="_fTeFICdHEeW9d6j1IEPRoA" type="3608">
+              <children xmi:type="notation:DecorationNode" xmi:id="_fTeFJSdHEeW9d6j1IEPRoA" type="7034">
+                <children xmi:type="notation:Node" xmi:id="_fTnPECdHEeW9d6j1IEPRoA" type="3495">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_fTnPFSdHEeW9d6j1IEPRoA" type="5168"/>
+                  <children xmi:type="notation:Node" xmi:id="_fTpEQCdHEeW9d6j1IEPRoA" type="3018">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTpEQSdHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fTpEQidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fTpEQydHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:LogMediatorInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@inputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTpERCdHEeW9d6j1IEPRoA" x="-6" y="-5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_fTpERSdHEeW9d6j1IEPRoA" type="3019">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTpERidHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fTpERydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fTpESCdHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:LogMediatorOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@outputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTpESSdHEeW9d6j1IEPRoA" x="-11" y="-9"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTnPESdHEeW9d6j1IEPRoA"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_fTnPEidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_fTnPEydHEeW9d6j1IEPRoA"/>
+                  <element xmi:type="esb:LogMediator" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTnPFCdHEeW9d6j1IEPRoA" x="46" y="74" width="79" height="75"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_fTvK4CdHEeW9d6j1IEPRoA" type="3516">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_fTvK5SdHEeW9d6j1IEPRoA" type="5183"/>
+                  <children xmi:type="notation:Node" xmi:id="_fTxAECdHEeW9d6j1IEPRoA" type="3100">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTxAESdHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fTxAEidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fTxAEydHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:HeaderMediatorInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@inputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTxAFCdHEeW9d6j1IEPRoA" x="-6" y="-5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_fTxAFSdHEeW9d6j1IEPRoA" type="3101">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTxAFidHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fTxAFydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fTxAGCdHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:HeaderMediatorOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@outputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTxAGSdHEeW9d6j1IEPRoA" x="-11" y="-9"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTvK4SdHEeW9d6j1IEPRoA"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_fTvK4idHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_fTvK4ydHEeW9d6j1IEPRoA"/>
+                  <element xmi:type="esb:HeaderMediator" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTvK5CdHEeW9d6j1IEPRoA" x="142" y="58" width="77" height="75"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_fT2foCdHEeW9d6j1IEPRoA" type="3503">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_fT2fpSdHEeW9d6j1IEPRoA" type="5132"/>
+                  <children xmi:type="notation:Node" xmi:id="_fT4U0CdHEeW9d6j1IEPRoA" type="3049">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fT4U0SdHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fT4U0idHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fT4U0ydHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:SequenceInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@inputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fT4U1CdHEeW9d6j1IEPRoA"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_fT6KACdHEeW9d6j1IEPRoA" type="3050">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fT6KASdHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fT6KAidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fT6KAydHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:SequenceOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@outputConnector.0"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fT6KBCdHEeW9d6j1IEPRoA"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_fT2foSdHEeW9d6j1IEPRoA"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_fT2foidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_fT2foydHEeW9d6j1IEPRoA"/>
+                  <element xmi:type="esb:Sequence" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fT2fpCdHEeW9d6j1IEPRoA" x="259" y="58" width="101" height="75"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_fT90YCdHEeW9d6j1IEPRoA" type="3495">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_fT90ZSdHEeW9d6j1IEPRoA" type="5168"/>
+                  <children xmi:type="notation:Node" xmi:id="_fT_CgCdHEeW9d6j1IEPRoA" type="3018">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fT_CgSdHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fT_CgidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fT_CgydHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:LogMediatorInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@inputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fT_ChCdHEeW9d6j1IEPRoA" x="-6" y="-5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_fT_ChSdHEeW9d6j1IEPRoA" type="3019">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fT_ChidHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fT_ChydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fT_CiCdHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:LogMediatorOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@outputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fT_CiSdHEeW9d6j1IEPRoA" x="-11" y="-9"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_fT90YSdHEeW9d6j1IEPRoA"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_fT90YidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_fT90YydHEeW9d6j1IEPRoA"/>
+                  <element xmi:type="esb:LogMediator" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fT90ZCdHEeW9d6j1IEPRoA" x="400" y="58" width="77" height="75"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_fUFJICdHEeW9d6j1IEPRoA" type="3494">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_fUFJJSdHEeW9d6j1IEPRoA" type="5129"/>
+                  <children xmi:type="notation:Node" xmi:id="_fUG-UCdHEeW9d6j1IEPRoA" type="3010">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUG-USdHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fUG-UidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fUG-UydHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:FilterMediatorInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@inputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUG-VCdHEeW9d6j1IEPRoA" x="-6" y="-5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_fUG-VSdHEeW9d6j1IEPRoA" type="3534">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUG-VidHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fUG-VydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fUG-WCdHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:FilterMediatorOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@outputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUG-WSdHEeW9d6j1IEPRoA"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_fUG-WidHEeW9d6j1IEPRoA" type="3011">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUG-WydHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fUG-XCdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fUG-XSdHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:FilterMediatorPassOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@passOutputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUG-XidHEeW9d6j1IEPRoA" x="81" y="-29"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_fUHlYCdHEeW9d6j1IEPRoA" type="3012">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUHlYSdHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fUHlYidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fUHlYydHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:FilterMediatorFailOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@failOutputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUHlZCdHEeW9d6j1IEPRoA" x="81" y="11"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_fUHlZSdHEeW9d6j1IEPRoA" type="3531">
+                    <children xmi:type="notation:Node" xmi:id="_fUJakCdHEeW9d6j1IEPRoA" type="3535">
+                      <children xmi:type="notation:Node" xmi:id="_fUKBpSdHEeW9d6j1IEPRoA" type="3536">
+                        <children xmi:type="notation:DecorationNode" xmi:id="_fUKosCdHEeW9d6j1IEPRoA" type="7022">
+                          <children xmi:type="notation:Node" xmi:id="_fUR9cCdHEeW9d6j1IEPRoA" type="3495">
+                            <children xmi:type="notation:DecorationNode" xmi:id="_fUSkgCdHEeW9d6j1IEPRoA" type="5168"/>
+                            <children xmi:type="notation:Node" xmi:id="_fUTyoCdHEeW9d6j1IEPRoA" type="3018">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUTyoSdHEeW9d6j1IEPRoA"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_fUTyoidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_fUTyoydHEeW9d6j1IEPRoA"/>
+                              <element xmi:type="esb:LogMediatorInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.0/@inputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUTypCdHEeW9d6j1IEPRoA" x="-6" y="-5"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_fUTypSdHEeW9d6j1IEPRoA" type="3019">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUTypidHEeW9d6j1IEPRoA"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_fUTypydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_fUTyqCdHEeW9d6j1IEPRoA"/>
+                              <element xmi:type="esb:LogMediatorOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.0/@outputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUTyqSdHEeW9d6j1IEPRoA" x="-11" y="-9"/>
+                            </children>
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUR9cSdHEeW9d6j1IEPRoA"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_fUR9cidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_fUR9cydHEeW9d6j1IEPRoA"/>
+                            <element xmi:type="esb:LogMediator" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.0"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUR9dCdHEeW9d6j1IEPRoA" x="46" y="20" width="79" height="75"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_fUZ5QCdHEeW9d6j1IEPRoA" type="3492">
+                            <children xmi:type="notation:DecorationNode" xmi:id="_fUZ5RSdHEeW9d6j1IEPRoA" type="5167"/>
+                            <children xmi:type="notation:Node" xmi:id="_fUbHYCdHEeW9d6j1IEPRoA" type="3033">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUbHYSdHEeW9d6j1IEPRoA"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_fUbHYidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_fUbHYydHEeW9d6j1IEPRoA"/>
+                              <element xmi:type="esb:PropertyMediatorInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.1/@inputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUbHZCdHEeW9d6j1IEPRoA" x="-6" y="-5"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_fUbHZSdHEeW9d6j1IEPRoA" type="3034">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUbHZidHEeW9d6j1IEPRoA"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_fUbHZydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_fUbHaCdHEeW9d6j1IEPRoA"/>
+                              <element xmi:type="esb:PropertyMediatorOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.1/@outputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUbHaSdHEeW9d6j1IEPRoA" x="-11" y="-9"/>
+                            </children>
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUZ5QSdHEeW9d6j1IEPRoA"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_fUZ5QidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_fUZ5QydHEeW9d6j1IEPRoA"/>
+                            <element xmi:type="esb:PropertyMediator" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.1"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUZ5RCdHEeW9d6j1IEPRoA" x="142" y="10" width="77" height="75"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_fUicICdHEeW9d6j1IEPRoA" type="3492">
+                            <children xmi:type="notation:DecorationNode" xmi:id="_fUicJSdHEeW9d6j1IEPRoA" type="5167"/>
+                            <children xmi:type="notation:Node" xmi:id="_fUkRUCdHEeW9d6j1IEPRoA" type="3033">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUkRUSdHEeW9d6j1IEPRoA"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_fUkRUidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_fUkRUydHEeW9d6j1IEPRoA"/>
+                              <element xmi:type="esb:PropertyMediatorInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.2/@inputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUkRVCdHEeW9d6j1IEPRoA" x="-6" y="-5"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_fUkRVSdHEeW9d6j1IEPRoA" type="3034">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUkRVidHEeW9d6j1IEPRoA"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_fUkRVydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_fUkRWCdHEeW9d6j1IEPRoA"/>
+                              <element xmi:type="esb:PropertyMediatorOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.2/@outputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUkRWSdHEeW9d6j1IEPRoA" x="-11" y="-9"/>
+                            </children>
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUicISdHEeW9d6j1IEPRoA"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_fUicIidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_fUicIydHEeW9d6j1IEPRoA"/>
+                            <element xmi:type="esb:PropertyMediator" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.2"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUicJCdHEeW9d6j1IEPRoA" x="259" y="10" width="77" height="75"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_fUrmECdHEeW9d6j1IEPRoA" type="3492">
+                            <children xmi:type="notation:DecorationNode" xmi:id="_fUrmFSdHEeW9d6j1IEPRoA" type="5167"/>
+                            <children xmi:type="notation:Node" xmi:id="_fUs0MCdHEeW9d6j1IEPRoA" type="3033">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUs0MSdHEeW9d6j1IEPRoA"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_fUs0MidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_fUs0MydHEeW9d6j1IEPRoA"/>
+                              <element xmi:type="esb:PropertyMediatorInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.3/@inputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUs0NCdHEeW9d6j1IEPRoA" x="-6" y="-5"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_fUs0NSdHEeW9d6j1IEPRoA" type="3034">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUs0NidHEeW9d6j1IEPRoA"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_fUs0NydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_fUs0OCdHEeW9d6j1IEPRoA"/>
+                              <element xmi:type="esb:PropertyMediatorOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.3/@outputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUs0OSdHEeW9d6j1IEPRoA" x="-11" y="-9"/>
+                            </children>
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUrmESdHEeW9d6j1IEPRoA"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_fUrmEidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_fUrmEydHEeW9d6j1IEPRoA"/>
+                            <element xmi:type="esb:PropertyMediator" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.3"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUrmFCdHEeW9d6j1IEPRoA" x="376" y="10" width="77" height="75"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_fU0I8CdHEeW9d6j1IEPRoA" type="3503">
+                            <children xmi:type="notation:DecorationNode" xmi:id="_fU0I9SdHEeW9d6j1IEPRoA" type="5132"/>
+                            <children xmi:type="notation:Node" xmi:id="_fU1XECdHEeW9d6j1IEPRoA" type="3049">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_fU1XESdHEeW9d6j1IEPRoA"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_fU1XEidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_fU1XEydHEeW9d6j1IEPRoA"/>
+                              <element xmi:type="esb:SequenceInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.4/@inputConnector"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fU1XFCdHEeW9d6j1IEPRoA"/>
+                            </children>
+                            <children xmi:type="notation:Node" xmi:id="_fU3MQCdHEeW9d6j1IEPRoA" type="3050">
+                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_fU3MQSdHEeW9d6j1IEPRoA"/>
+                              <styles xmi:type="notation:FontStyle" xmi:id="_fU3MQidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                              <styles xmi:type="notation:LineStyle" xmi:id="_fU3MQydHEeW9d6j1IEPRoA"/>
+                              <element xmi:type="esb:SequenceOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.4/@outputConnector.0"/>
+                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fU3MRCdHEeW9d6j1IEPRoA"/>
+                            </children>
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_fU0I8SdHEeW9d6j1IEPRoA"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_fU0I8idHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_fU0I8ydHEeW9d6j1IEPRoA"/>
+                            <element xmi:type="esb:Sequence" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.4"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fU0I9CdHEeW9d6j1IEPRoA" x="493" y="10" width="140" height="75"/>
+                          </children>
+                          <styles xmi:type="notation:TitleStyle" xmi:id="_fUKosSdHEeW9d6j1IEPRoA" showTitle="true"/>
+                        </children>
+                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUKBpidHEeW9d6j1IEPRoA"/>
+                        <styles xmi:type="notation:FontStyle" xmi:id="_fUKBpydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                        <styles xmi:type="notation:LineStyle" xmi:id="_fUKBqCdHEeW9d6j1IEPRoA"/>
+                        <element xmi:type="esb:MediatorFlow" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUKBqSdHEeW9d6j1IEPRoA"/>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUJakSdHEeW9d6j1IEPRoA"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_fUJakidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_fUJakydHEeW9d6j1IEPRoA"/>
+                      <element xmi:type="esb:FilterPassContainer" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUJalCdHEeW9d6j1IEPRoA"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_fUKBoCdHEeW9d6j1IEPRoA" type="3537">
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUKBoSdHEeW9d6j1IEPRoA"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_fUKBoidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_fUKBoydHEeW9d6j1IEPRoA"/>
+                      <element xmi:type="esb:FilterFailContainer" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@failContainer"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUKBpCdHEeW9d6j1IEPRoA"/>
+                    </children>
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUHlZidHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fUHlZydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fUHlaCdHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:FilterContainer" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUHlaSdHEeW9d6j1IEPRoA"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_fUFJISdHEeW9d6j1IEPRoA"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_fUFJIidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_fUFJIydHEeW9d6j1IEPRoA"/>
+                  <element xmi:type="esb:FilterMediator" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fUFJJCdHEeW9d6j1IEPRoA" x="517" y="58" width="170" height="100"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_fU62oCdHEeW9d6j1IEPRoA" type="3739">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_fU62pSdHEeW9d6j1IEPRoA" type="5209"/>
+                  <children xmi:type="notation:Node" xmi:id="_fU8EwCdHEeW9d6j1IEPRoA" type="3740">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fU8EwSdHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fU8EwidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fU8EwydHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:RespondMediatorInputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.5/@inputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fU8ExCdHEeW9d6j1IEPRoA" x="-6" y="-5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_fU8ExSdHEeW9d6j1IEPRoA" type="3741">
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fU8ExidHEeW9d6j1IEPRoA"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_fU8ExydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_fU8EyCdHEeW9d6j1IEPRoA"/>
+                    <element xmi:type="esb:RespondMediatorOutputConnector" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.5/@outputConnector"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fU8EySdHEeW9d6j1IEPRoA" x="-11" y="-9"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_fU62oSdHEeW9d6j1IEPRoA"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_fU62oidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_fU62oydHEeW9d6j1IEPRoA"/>
+                  <element xmi:type="esb:RespondMediator" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.5"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fU62pCdHEeW9d6j1IEPRoA" x="1280" y="58" width="77" height="75"/>
+                </children>
+                <styles xmi:type="notation:TitleStyle" xmi:id="_fTeFJidHEeW9d6j1IEPRoA" showTitle="true"/>
+              </children>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTeFISdHEeW9d6j1IEPRoA"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_fTeFIidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_fTeFIydHEeW9d6j1IEPRoA"/>
+              <element xmi:type="esb:MediatorFlow" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTeFJCdHEeW9d6j1IEPRoA"/>
+            </children>
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTdeESdHEeW9d6j1IEPRoA"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_fTdeEidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+            <styles xmi:type="notation:LineStyle" xmi:id="_fTdeEydHEeW9d6j1IEPRoA"/>
+            <element xmi:type="esb:ProxyServiceSequenceAndEndpointContainer" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTdeFCdHEeW9d6j1IEPRoA"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fTdeFSdHEeW9d6j1IEPRoA" type="3488">
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTdeFidHEeW9d6j1IEPRoA"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_fTdeFydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+            <styles xmi:type="notation:LineStyle" xmi:id="_fTdeGCdHEeW9d6j1IEPRoA"/>
+            <element xmi:type="esb:ProxyServiceFaultContainer" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@faultContainer"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTdeGSdHEeW9d6j1IEPRoA"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTbB1idHEeW9d6j1IEPRoA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fTbB1ydHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_fTbB2CdHEeW9d6j1IEPRoA"/>
+          <element xmi:type="esb:ProxyServiceContainer" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTbB2SdHEeW9d6j1IEPRoA"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_fTZMoSdHEeW9d6j1IEPRoA"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_fTZMoidHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_fTZMoydHEeW9d6j1IEPRoA"/>
+        <element xmi:type="esb:ProxyService" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTZMpCdHEeW9d6j1IEPRoA" width="300" height="400"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_9c368SdCEeW9d6j1IEPRoA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_9c368idCEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_9c368ydCEeW9d6j1IEPRoA"/>
+    <element xmi:type="esb:EsbServer" href="proxy_GuranteedDeliveryProxy.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9c369CdCEeW9d6j1IEPRoA"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_9QTekSdCEeW9d6j1IEPRoA"/>
+  <element xmi:type="esb:EsbDiagram" href="proxy_GuranteedDeliveryProxy.esb#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_fVGc0CdHEeW9d6j1IEPRoA" type="4001" source="_fUG-WidHEeW9d6j1IEPRoA" target="_fUTyoCdHEeW9d6j1IEPRoA" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fVGc0SdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@passOutputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fVGc0idHEeW9d6j1IEPRoA" points="[11, -8, -5, 3]$[10, -7, -6, 4]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fVJgICdHEeW9d6j1IEPRoA" type="4001" source="_fUTypSdHEeW9d6j1IEPRoA" target="_fUbHYCdHEeW9d6j1IEPRoA" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fVJgISdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fVJgIidHEeW9d6j1IEPRoA" points="[-11, 0, -6, 0]$[1, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fVMjcCdHEeW9d6j1IEPRoA" type="4001" source="_fUbHZSdHEeW9d6j1IEPRoA" target="_fUkRUCdHEeW9d6j1IEPRoA" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fVMjcSdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.1/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fVMjcidHEeW9d6j1IEPRoA" points="[-11, 0, -6, 0]$[1, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fVPmwCdHEeW9d6j1IEPRoA" type="4001" source="_fUkRVSdHEeW9d6j1IEPRoA" target="_fUs0MCdHEeW9d6j1IEPRoA" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fVPmwSdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.2/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fVPmwidHEeW9d6j1IEPRoA" points="[-11, 0, -6, 0]$[1, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fVSqECdHEeW9d6j1IEPRoA" type="4001" source="_fUs0NSdHEeW9d6j1IEPRoA" target="_fU1XECdHEeW9d6j1IEPRoA" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fVSqESdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@filterContainer/@passContainer/@mediatorFlow/@children.3/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fVSqEidHEeW9d6j1IEPRoA" points="[1, 9, 0, 4]$[0, 0, -1, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fVVGUCdHEeW9d6j1IEPRoA" type="4001" source="_fTaawCdHEeW9d6j1IEPRoA" target="_fTpEQCdHEeW9d6j1IEPRoA" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fVVGUSdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fVVGUidHEeW9d6j1IEPRoA" points="[11, 5, -5, 0]$[10, 0, -6, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fVYJoCdHEeW9d6j1IEPRoA" type="4001" source="_fTpERSdHEeW9d6j1IEPRoA" target="_fTxAECdHEeW9d6j1IEPRoA" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fVYJoSdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fVYJoidHEeW9d6j1IEPRoA" points="[-11, 0, -6, 0]$[1, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fVal4CdHEeW9d6j1IEPRoA" type="4001" source="_fTxAFSdHEeW9d6j1IEPRoA" target="_fT4U0CdHEeW9d6j1IEPRoA" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fVal4SdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.1/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fVal4idHEeW9d6j1IEPRoA" points="[1, 9, 0, 4]$[0, 0, -1, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fVdpMCdHEeW9d6j1IEPRoA" type="4001" source="_fT6KACdHEeW9d6j1IEPRoA" target="_fT_CgCdHEeW9d6j1IEPRoA" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fVdpMSdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@outputConnector.0/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fVdpMidHEeW9d6j1IEPRoA" points="[-6, -5, 0, 0]$[0, 0, 6, 5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fVgsgCdHEeW9d6j1IEPRoA" type="4001" source="_fT_ChSdHEeW9d6j1IEPRoA" target="_fUG-UCdHEeW9d6j1IEPRoA" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fVgsgSdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.3/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fVgsgidHEeW9d6j1IEPRoA" points="[-11, 0, -6, 0]$[1, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fVjIwCdHEeW9d6j1IEPRoA" type="4001" source="_fUG-VSdHEeW9d6j1IEPRoA" target="_fU8EwCdHEeW9d6j1IEPRoA" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_fVjIwSdHEeW9d6j1IEPRoA" fontName="Ubuntu"/>
+    <element xmi:type="esb:EsbLink" href="proxy_GuranteedDeliveryProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.4/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fVjIwidHEeW9d6j1IEPRoA" points="[-11, 0, 0, 0]$[-5, 0, 6, 0]"/>
+  </edges>
+</notation:Diagram>

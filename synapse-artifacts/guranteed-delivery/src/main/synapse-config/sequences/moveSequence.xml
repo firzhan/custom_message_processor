@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence xmlns="http://ws.apache.org/ns/synapse" name="moveSequence" onError="deliveryFailSequence">
+    <log level="custom">
+        <property name="Sequence Invoke:" value="moveSequence - to move the messages to the 2nd queue"/>
+    </log>
+    <filter xmlns:ns="http://org.apache.synapse/xsd" source="$axis2:HTTP_SC" regex="(200|202)">
+        <then>
+            <property name="FORCE_SC_ACCEPTED" value="true" scope="axis2" type="STRING"/>
+            <property name="OUT_ONLY" value="true" scope="default" type="STRING"/>
+            <log level="custom">
+                <property name="JMS Response" value="Message pushed back to the client successfully"/>
+            </log>
+        </then>
+        <else>
+            <property name="FORCE_SC_ACCEPTED" value="true" scope="axis2" type="STRING"/>
+            <property name="OUT_ONLY" value="true" scope="default" type="STRING"/>
+            <send>
+                <endpoint key="backupQueueEP"/>
+            </send>
+        </else>
+    </filter>
+</sequence>

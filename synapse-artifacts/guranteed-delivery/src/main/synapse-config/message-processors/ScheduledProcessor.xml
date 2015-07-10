@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messageProcessor xmlns="http://ws.apache.org/ns/synapse" class="org.apache.synapse.message.custom.processor.impl.CustomScheduledMessageForwardingProcessor" name="ScheduledProcessor" messageStore="stock_message_queue">
+    <parameter name="message.processor.reply.sequence">moveSequence</parameter>
+    <parameter name="max.delivery.attempts">100</parameter>
+    <parameter name="client.retry.interval">1000</parameter>
+    <parameter name="interval">1000</parameter>
+    <parameter name="is.active">true</parameter>
+</messageProcessor>

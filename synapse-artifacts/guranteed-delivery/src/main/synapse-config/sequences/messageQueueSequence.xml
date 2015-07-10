@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence xmlns="http://ws.apache.org/ns/synapse" name="messageQueueSequence" onError="deliveryFailSequence">
+    <log level="custom">
+        <property name="Sequence Invoke:" value="messageQueueSequence"/>
+    </log>
+    <enrich>
+        <source type="property" clone="true" property="SOAP_ENVELOPE"/>
+        <target type="envelope"/>
+    </enrich>
+    <property name="target.endpoint" value="RealTimeEndPoint" scope="default" type="STRING"/>
+    <store messageStore="stock_message_queue"/>
+    <property name="HTTP_SC" value="500" scope="axis2" type="STRING"/>
+    <payloadFactory media-type="xml">
+        <format>
+            <Response xmlns="">
+                <status>failure</status>
+                <faultMsg>
+                    <faultcode>$1</faultcode>
+                    <faultstring>$2</faultstring>
+                    <HTTP_STATUS>$3</HTTP_STATUS>
+                </faultMsg>
+            </Response>
+        </format>
+        <args>
+            <arg evaluator="xml" expression="$ctx:FAULT_CODE"/>
+            <arg evaluator="xml" expression="$ctx:FAULT_STRING"/>
+            <arg evaluator="xml" expression="$ctx:FAULT_STATUS"/>
+        </args>
+    </payloadFactory>
+    <respond/>
+</sequence>
